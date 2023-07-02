@@ -1,3 +1,10 @@
 node_modules
+build
 
 .env
+
+chatbot-cli-linux
+chatbot-cli-macos
+chatbot-cli-win.exe
+
+.DS_Store

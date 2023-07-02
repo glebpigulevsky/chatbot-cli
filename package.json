@@ -2,10 +2,13 @@
   "name": "chatbot-cli",
   "version": "1.0.0",
   "description": "chatgpt in terminal",
-  "type": "module",
+  "type": "commonjs",
   "main": "index.js",
+  "bin": "out.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "pkg": "pkg .",
+    "build": "node isbuild.js"
   },
   "keywords": [
     "chatgpt",
@@ -17,8 +20,12 @@
   "dependencies": {
     "chalk": "^5.3.0",
     "colors": "^1.4.0",
-    "dotenv": "^16.3.1",
     "openai": "^3.3.0",
+    "pkg": "^5.8.1",
     "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "esbuild": "^0.18.11",
+    "esbuild-envfile-plugin": "^1.0.5"
   }
 }
